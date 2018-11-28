@@ -21,7 +21,7 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
      <!-- Default radius of the software rounded corners. -->
-     <dimen name="rounded_corner_radius">181.0px</dimen>
+     <dimen name="rounded_corner_radius">50.0px</dimen>
      <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
           calculate the status bar height. -->
      <dimen name="status_bar_height_portrait">76.0px</dimen>
