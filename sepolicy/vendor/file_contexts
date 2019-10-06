@@ -40,3 +40,4 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power(@[0-9]\.[0-9])?-service\.samsung-libperfmgr   u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb(@[0-9]\.[0-9])?-service\.samsung            u:object_r:hal_usb_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.vibrator(@[0-9]\.[0-9])?-service        u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.r3q                     u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
