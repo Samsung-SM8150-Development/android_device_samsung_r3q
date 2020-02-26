@@ -205,6 +205,9 @@ ro.vendor.nfc.support.nonaid=false
 ro.vendor.nfc.support.othercategory=true
 ro.vendor.nfc.support.uicc=true
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # Logspam
 persist.log.tag.VendorTagDescriptor=S
 persist.log.tag.sscrpcd=S

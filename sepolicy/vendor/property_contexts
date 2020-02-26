@@ -34,3 +34,6 @@ vendor.sys.qseecomd.enable                       u:object_r:vendor_qseecomd_prop
 
 # Power
 vendor.powerhal.				 u:object_r:vendor_powerhal_prop:s0
+
+# Fastbootd
+ro.fastbootd.available				 u:object_r:exported_default_prop:s0
