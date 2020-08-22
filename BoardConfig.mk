@@ -65,12 +65,16 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
+## Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
 # Prebuilt - override
 BOARD_KERNEL_IMAGE_NAME := Image-dtb
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_KERNEL_SEPARATED_DTBO :=
 TARGET_KERNEL_CONFIG :=
+TARGET_RELEASETOOLS_EXTENSIONS := 
 
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
