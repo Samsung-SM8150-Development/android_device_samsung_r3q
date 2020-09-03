@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini)
             sed -i 's/swlan0/wlan1/g' "${2}"
             ;;
+	vendor/lib*/libsensorlistener.so)
+	    "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
+	    ;;
     esac
 }
 

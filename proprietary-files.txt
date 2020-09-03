@@ -763,8 +763,7 @@ vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/sns_reg_config
-vendor/lib/libsensorlistener.so
-vendor/lib/libsensorndkbridge.so
+vendor/lib/libsensorlistener.so|5292e677b6bf224d0f3160c72ef8f58ebadc7498
 vendor/lib/libsensorslog.so
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsnsapi.so
@@ -774,8 +773,7 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/libnanopb.so
-vendor/lib64/libsensorlistener.so
-vendor/lib64/libsensorndkbridge.so
+vendor/lib64/libsensorlistener.so|0a3be860a91670f9ba2bfa3fc30d71dd78d5ea10
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsnsapi.so
