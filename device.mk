@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.samsung \
     init.udfps.rc
 
+# Fastcharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.samsung
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
