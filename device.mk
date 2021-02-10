@@ -165,3 +165,11 @@ PRODUCT_PACKAGES += \
     init.samsung.display.rc \
     init.samsung.rc \
     init.target.rc
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
