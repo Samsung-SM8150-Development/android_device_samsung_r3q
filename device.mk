@@ -14,6 +14,8 @@ $(call inherit-product, $(DEVICE_PATH)/tools/debug.mk)
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
+# Debugfs
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Audio
 PRODUCT_PACKAGES += \
