@@ -12,6 +12,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Include tools
 $(call inherit-product, $(DEVICE_PATH)/tools/debug.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 # Debugfs
