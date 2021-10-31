@@ -232,8 +232,11 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-evolution
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_SOONG_NAMESPACES += \
-     $(DEVICE_PATH) \
-     hardware/samsung
+    $(DEVICE_PATH) \
+    hardware/samsung \
+    hardware/samsung/aidl/power-libperfmgr \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Power
 PRODUCT_PACKAGES += \
@@ -312,6 +315,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.samsung-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # QMI
 PRODUCT_PACKAGES += \
