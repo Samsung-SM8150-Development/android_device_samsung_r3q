@@ -81,3 +81,10 @@ prebuilt_etc {
   sub_dir: "init/hw",
   vendor: true,
 }
+
+prebuilt_etc {
+   name: "init.udfps.rc",
+   src: "etc/init.udfps.rc",
+   sub_dir: "init",
+   vendor: true,
+}

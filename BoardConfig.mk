@@ -30,5 +30,8 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
+# Fingerprint
+TARGET_SEC_FP_REQUEST_TOUCH_EVENT := true
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
