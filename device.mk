@@ -393,6 +393,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.hardware.sensors@2.0.vendor
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Skip mount
 PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg
