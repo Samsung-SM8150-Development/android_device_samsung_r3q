@@ -181,3 +181,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
     libxml2
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.samsung
