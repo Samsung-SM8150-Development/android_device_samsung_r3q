@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
    libtinyalsa \
    libtinycompress
 
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio/configs
 
 # Audio configs
