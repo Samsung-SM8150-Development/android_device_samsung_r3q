@@ -34,5 +34,8 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_SEC_FP_REQUEST_TOUCH_EVENT := true
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
 
+# Configs File System
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
