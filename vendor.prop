@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.default_name=Galaxy A90 5G
+
 # DRM
 drm.service.enabled=true
 
