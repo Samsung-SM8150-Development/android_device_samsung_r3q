@@ -32,6 +32,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Fingerprint
 TARGET_SEC_FP_REQUEST_TOUCH_EVENT := true
+TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
