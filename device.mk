@@ -121,6 +121,11 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.samsung \
     init.udfps.rc
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    qcom.fmradio
+
 # FS config
 PRODUCT_PACKAGES += \
     fs_config_files
