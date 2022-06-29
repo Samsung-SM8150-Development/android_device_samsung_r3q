@@ -19,6 +19,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
+# Media
+TARGET_USES_HWC2 := true
+TARGET_USES_ION := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 

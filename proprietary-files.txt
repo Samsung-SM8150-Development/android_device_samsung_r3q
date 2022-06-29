@@ -493,6 +493,7 @@ vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles.xml
+vendor/etc/system_properties.xml
 
 # Media OMX
 vendor/lib/libAlacSwDec.so
@@ -513,10 +514,7 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxWmaDec.so
-vendor/lib/libc2dcolorconvert.so
 vendor/lib/libdsd2pcm.so
-vendor/lib/libplatformconfig.so
-vendor/lib/libstagefrighthw.so
 vendor/lib/libswvdec.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
@@ -535,9 +533,6 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libc2dcolorconvert.so
-vendor/lib64/libplatformconfig.so
-vendor/lib64/libstagefrighthw.so
 vendor/lib64/libswvdec.so
 
 # NFC

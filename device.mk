@@ -111,6 +111,27 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor
+
+# OMX
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
