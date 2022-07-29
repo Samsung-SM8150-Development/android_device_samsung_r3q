@@ -157,6 +157,9 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
+
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
@@ -877,3 +880,6 @@
         <item>600</item>
     </integer-array>
 </resources>
+
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
