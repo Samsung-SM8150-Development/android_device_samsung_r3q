@@ -217,6 +217,9 @@ ro.vendor.nfc.support.uicc=true
 # Fastbootd
 ro.fastbootd.available=true
 
+# RCS
+persist.vendor.rcs.singlereg.feature=1
+
 # Logspam
 persist.log.tag.VendorTagDescriptor=S
 persist.log.tag.sscrpcd=S
