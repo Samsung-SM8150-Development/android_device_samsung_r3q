@@ -118,7 +118,9 @@ TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
