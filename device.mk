@@ -146,7 +146,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_SOONG_NAMESPACES += \
-     $(DEVICE_PATH)
+     $(DEVICE_PATH) \
+     hardware/samsung
 
 # Rootdir
 PRODUCT_PACKAGES += \
