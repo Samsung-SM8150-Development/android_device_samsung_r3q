@@ -402,7 +402,8 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
+    vendor.lineage.touch@1.0-service.samsung \
+    vendor.lineage.touch@1.0-service.samsung_singletap
 
 # USB
 PRODUCT_PACKAGES += \
