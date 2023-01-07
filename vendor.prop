@@ -86,7 +86,6 @@ vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.flac.sw.decoder.24bit=true
 
 # BT (A2DP)
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 ro.bluetooth.a2dp_offload.supported=true
 persist.bluetooth.a2dp_offload.disabled=false
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
