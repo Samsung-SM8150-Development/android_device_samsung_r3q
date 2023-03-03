@@ -161,6 +161,10 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
