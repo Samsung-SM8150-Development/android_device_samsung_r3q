@@ -169,6 +169,10 @@ vendor.usb.use_ffs_mtp=0
 # Media
 debug.stagefright.ccodec=1
 
+# Vibrator
+ro.vendor.vibrator_hal.click_duration=80
+ro.vendor.vibrator_hal.tick_duration=40
+
 # FRP
 ro.frp.pst=/dev/block/persistent
 
