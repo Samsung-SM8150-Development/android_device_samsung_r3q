@@ -55,8 +55,8 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libsample7.so)
-            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
+        vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini)
+            sed -i 's/swlan0/wlan1/g' "${2}"
             ;;
     esac
 }
