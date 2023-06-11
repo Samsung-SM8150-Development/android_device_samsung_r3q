@@ -438,6 +438,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung \
