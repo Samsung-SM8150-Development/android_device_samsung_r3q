@@ -49,6 +49,8 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_CONFIG := r3q_defconfig
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
