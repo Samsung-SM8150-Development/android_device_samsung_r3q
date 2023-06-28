@@ -190,6 +190,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors-service.samsung-multihal
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung
