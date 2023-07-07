@@ -81,6 +81,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SePolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
