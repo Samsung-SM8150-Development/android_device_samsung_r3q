@@ -13,6 +13,9 @@ ro.hardware.gatekeeper=mdfpp
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # RIL
 ro.vendor.sec.radio.def_network=9
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
