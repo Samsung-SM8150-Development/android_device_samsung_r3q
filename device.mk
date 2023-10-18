@@ -15,6 +15,9 @@ $(call inherit-product, $(DEVICE_PATH)/tools/debug.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Updatable APEX's
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 # Debugfs
