@@ -91,10 +91,6 @@ vendor/firmware/apnv11.bin
 vendor/firmware/crbtfw21.tlv
 vendor/firmware/crnv21.bin
 
-# Broadcast radio
-vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
-vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
-
 # CACert
 -vendor/app/CACertService/CACertService.apk
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so

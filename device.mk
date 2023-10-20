@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
    audio.r_submix.default \
    audio.usb.default
 
+# Broadcast
+PRODUCT_PACKAGES += \
+   android.hardware.broadcastradio@1.0-impl
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64
