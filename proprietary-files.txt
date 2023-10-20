@@ -458,10 +458,6 @@ vendor/lib64/libkeymaster_helper.so
 -vendor/lib64/libskeymaster4device.so
 
 # Listen
-vendor/etc/listen_platform_info.xml
-vendor/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml
-vendor/etc/sound_trigger_mixer_paths_wcd9340.xml
-vendor/etc/sound_trigger_platform_info.xml
 vendor/lib/hw/sound_trigger.primary.msmnile.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libaudio_soundtrigger.so
