@@ -142,6 +142,11 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service.samsung \
+    libkeymaster4_1support.vendor:64
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
