@@ -81,6 +81,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
 
+# SePolicy
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
