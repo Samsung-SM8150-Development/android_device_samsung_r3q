@@ -99,6 +99,9 @@ TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # SePolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
