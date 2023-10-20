@@ -282,3 +282,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     wpa_supplicant
+
+# Inherit from r3q vendor tree
+$(call inherit-product, vendor/samsung/r3q/r3q-vendor.mk)
