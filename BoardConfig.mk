@@ -22,5 +22,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := r3q,r3qxx
