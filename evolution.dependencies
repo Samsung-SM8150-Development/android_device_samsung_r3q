@@ -3,5 +3,11 @@
         "repository": "android_hardware_samsung",
         "target_path": "hardware/samsung",
         "remote": "lineage",
+   },
+   {
+        "repository": "Samsung-SM8150-Development/android_kernel_samsung_r3q",
+        "target_path": "kernel/samsung/r3q",
+        "remote": "github",
+        "revision": "master",
    }
 ]
