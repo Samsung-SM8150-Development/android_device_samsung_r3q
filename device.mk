@@ -84,6 +84,12 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl:64
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
