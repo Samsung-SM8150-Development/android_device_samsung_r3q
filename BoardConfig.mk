@@ -102,6 +102,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Vibrator
+$(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
+
 # SePolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
