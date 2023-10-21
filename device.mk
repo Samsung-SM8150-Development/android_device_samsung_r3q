@@ -167,6 +167,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcNci \
+    Tag
+
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
