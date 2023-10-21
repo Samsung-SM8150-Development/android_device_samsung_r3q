@@ -26,6 +26,9 @@ ro.crypto.metadata_init_delete_all_keys.enabled=false
 # Shutdown config
 sys.vendor.shutdown.waittime=500
 
+# Netflix
+ro.netflix.bsp_rev=Q855-16947-1
+
 # Media
 debug.stagefright.omx_default_rank=0
 vendor.mm.enable.qcom_parser=16777215
