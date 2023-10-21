@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
    audio.r_submix.default \
    audio.usb.default
 
+PRODUCT_PACKAGES += \
+   libtinyalsa \
+   libtinycompress
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio/configs
 
 # Audio configs
@@ -45,13 +49,18 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-# Broadcast
+# Bluetooth
+PRODUCT_PACKAGES += \
+   android.hardware.bluetooth@1.0.vendor
+
+# BroadcastRadio
 PRODUCT_PACKAGES += \
    android.hardware.broadcastradio@1.0-impl
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-service_64
+    android.hardware.camera.provider@2.5-service_64 \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -78,7 +87,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libsdmcore \
     libsdmutils \
-    libtinyxml
+    libtinyxml \
+    libtinyxml2
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.14 \
@@ -152,6 +162,10 @@ PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service
 
+# Neuralnetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
@@ -186,6 +200,18 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 PRODUCT_SOONG_NAMESPACES += \
      $(DEVICE_PATH) \
      hardware/samsung
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor
+
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
+
+# Servicetracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -266,7 +292,9 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal
+    android.hardware.sensors-service.samsung-multihal \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.hardware.sensors@2.0.vendor
 
 # USB
 PRODUCT_PACKAGES += \

@@ -2,6 +2,15 @@
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/audconf/OPEN/Hdmi_cal.acdb
+vendor/etc/audconf/OPEN/workspaceFile.qwsp
+vendor/etc/audconf/OPEN/Handset_cal.acdb
+vendor/etc/audconf/OPEN/General_cal.acdb
+vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
+vendor/etc/audconf/OPEN/Codec_cal.acdb
+vendor/etc/audconf/OPEN/Global_cal.acdb
+vendor/etc/audconf/OPEN/Speaker_cal.acdb
+vendor/etc/audconf/OPEN/Headset_cal.acdb
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -55,6 +64,7 @@ vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/librecordalive.so
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
@@ -850,12 +860,14 @@ vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
 vendor/etc/sec_config_oem
+vendor/lib/libconfigdb.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libril_sem.so
 vendor/lib64/librilutils.so
 vendor/lib64/librmnetctl.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsemnativecarrierfeature.so
+vendor/lib64/libqsocket.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
@@ -920,6 +932,7 @@ vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsnsapi.so
 vendor/lib/libsnsdiaglog.so
 vendor/lib/libssc.so
+vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/libsensorlistener.so
@@ -929,6 +942,7 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
 
@@ -983,12 +997,14 @@ vendor/lib64/libthermalclient.so
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
+vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 
 # Ueventd
 vendor/ueventd.rc:vendor/etc/ueventd.rc
