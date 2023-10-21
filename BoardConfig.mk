@@ -106,6 +106,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
 
 # SePolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 # WiFi

@@ -1,0 +1,6 @@
+## Data
+type vendor_biometrics_data_file, file_type, data_file_type;
+
+## Sysfs
+type sysfs_fingerprint, file_type, sysfs_type;
+type sysfs_wifi, file_type, sysfs_type;

@@ -1,0 +1,3 @@
+genfscon sysfs /class/fingerprint		 u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/virtual/fingerprint	 u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /wifi				 u:object_r:sysfs_wifi:s0

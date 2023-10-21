@@ -1,0 +1,20 @@
+## Devices
+/dev/esfp[0-9]					 u:object_r:fingerprint_sensor_device:s0
+
+## Data
+/data/vendor/biometrics				 u:object_r:vendor_biometrics_data_file:s0
+
+## Mnt
+/mnt/vendor/efs(/.*)?				 u:object_r:efs_file:s0
+
+## Vendor
+/(vendor|system/vendor)/bin/secril_config_svc    u:object_r:secril_config_svc_exec:s0
+/(vendor|system/vendor)/bin/hw/macloader         u:object_r:macloader_exec:s0
+
+/(vendor|system/vendor)/bin/hw/android.hardware.sensors(@[0-9].[0-9])?-service.samsung-multihal   u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@[0-9].[0-9]-service\.samsung    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@[0-9]\.[0-9]-service\.widevine              u:object_r:hal_drm_widevine_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.samsung                         u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung         u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power(@[0-9]\.[0-9])?-service\.samsung-libperfmgr   u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb(@[0-9]\.[0-9])?-service\.samsung            u:object_r:hal_usb_default_exec:s0
