@@ -61,9 +61,10 @@ function blob_fixup() {
 	vendor/lib*/libsensorlistener.so)
 	    "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
 	    ;;
-        vendor/lib64/libskeymaster4device.so)
+        vendor/lib64/hw/gatekeeper.mdfpp.so|vendor/lib64/libskeymaster4device.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
+        
     esac
 }
 
