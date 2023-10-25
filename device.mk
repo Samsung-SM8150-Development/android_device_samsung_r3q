@@ -314,6 +314,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.hardware.sensors@2.0.vendor
 
+# Skip mount
+PRODUCT_PACKAGES += \
+    gsi_skip_mount.cfg
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung
