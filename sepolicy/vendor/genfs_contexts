@@ -1,4 +1,5 @@
-genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery       u:object_r:sysfs_power_suuply:s0
+genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery       u:object_r:sysfs_power_supply:s0
 genfscon sysfs /class/fingerprint		 u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/virtual/fingerprint	 u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect		u:object_r:sysfs_sec_hall_ic:s0
 genfscon sysfs /wifi				 u:object_r:sysfs_wifi:s0

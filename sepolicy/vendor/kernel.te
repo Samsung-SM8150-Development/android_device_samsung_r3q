@@ -1,0 +1,1 @@
+allow kernel sysfs_sec_hall_ic:file { read open };
