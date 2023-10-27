@@ -2,8 +2,8 @@
 type vendor_biometrics_data_file, file_type, data_file_type;
 
 ## Sysfs
-type sysfs_power_supply, file_type, sysfs_type;
-type sysfs_fingerprint, file_type, sysfs_type;
-type sysfs_sec_hall_ic, file_type, sysfs_type;
-type sysfs_sec_switch, file_type, sysfs_type;
-type sysfs_wifi, file_type, sysfs_type;
+type sysfs_power_supply, fs_type, sysfs_type;
+type sysfs_fingerprint, fs_type, sysfs_type;
+type sysfs_sec_hall_ic, fs_type, sysfs_type;
+type sysfs_sec_switch, fs_type, sysfs_type;
+type sysfs_wifi, fs_type, sysfs_type;
