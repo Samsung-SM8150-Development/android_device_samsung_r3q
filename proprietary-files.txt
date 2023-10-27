@@ -273,9 +273,6 @@ vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 vendor/lib64/libminksocket.so
 
-# ContextHub
-vendor/lib64/hw/android.hardware.contexthub@1.0-impl.generic.so
-
 # Charger
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
