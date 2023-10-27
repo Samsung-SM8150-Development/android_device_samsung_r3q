@@ -19,6 +19,7 @@
 #include "SamsungCameraProvider.h"
 
 #include <algorithm>
+#include <numeric>
 
 using ::android::NO_ERROR;
 using ::android::OK;
@@ -26,6 +27,10 @@ using ::android::OK;
 const int kMaxCameraIdLen = 16;
 
 SamsungCameraProvider::SamsungCameraProvider() : LegacyCameraProviderImpl_2_5() {
+#ifdef SAMSUNG_CAMERA_DEBUG
+    mExtraIDs.resize(100);
+    std::iota(std::begin(mExtraIDs), std::end(mExtraIDs), 0);
+#endif
     if (!mInitFailed) {
         for (int i : mExtraIDs) {
             struct camera_info info;
@@ -56,5 +61,3 @@ SamsungCameraProvider::SamsungCameraProvider() : LegacyCameraProviderImpl_2_5() 
         }
     }
 }
-
-SamsungCameraProvider::~SamsungCameraProvider() {}
