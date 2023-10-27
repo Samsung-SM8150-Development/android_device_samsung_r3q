@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-service_64 \
+    android.hardware.camera.provider@2.6-service.r3q \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Configstore
