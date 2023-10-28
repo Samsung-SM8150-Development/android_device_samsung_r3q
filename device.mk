@@ -391,6 +391,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung
