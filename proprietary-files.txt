@@ -789,6 +789,7 @@ vendor/bin/qca6234-service.sh
 vendor/etc/init/init.qti.qcv.rc
 
 # Samsung
+vendor/etc/init/init.ramplus.rc
 vendor/lib/libfloatingfeature.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libengmode_client.so

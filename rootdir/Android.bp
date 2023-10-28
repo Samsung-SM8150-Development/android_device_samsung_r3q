@@ -41,6 +41,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+  name: "fstab.ramplus",
+  src: "etc/fstab.ramplus",
+  vendor: true,
+}
+
+prebuilt_etc {
   name: "init.qcom.rc",
   src: "etc/init.qcom.rc",
   sub_dir: "init/hw",

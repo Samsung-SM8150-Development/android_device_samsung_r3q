@@ -255,6 +255,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.ramplus \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.r3q.rc \
