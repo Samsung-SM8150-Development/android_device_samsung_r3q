@@ -38,7 +38,7 @@
 /dev/block/bootdevice/by-name/system                   /system                ext4    ro,barrier=1,discard                                 wait
 /dev/block/bootdevice/by-name/vendor                   /vendor                ext4    ro,barrier=1,discard                                 wait
 /dev/block/bootdevice/by-name/omr                      /metadata              ext4    noatime,nosuid,nodev,discard                         wait,formattable
-/dev/block/bootdevice/by-name/userdata	/data	f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678,inlinecrypt	latemount,wait,check,fileencryption=aes-256-xts,quota,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata                 /data                  f2fs    noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678,inlinecrypt     latemount,wait,check,quota,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts
 #/dev/block/bootdevice/by-name/bluetooth                 /vendor/bt_firmware    vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait,slotselect
 
 # Need to have this entry in here even though the mount point itself is no longer needed.
