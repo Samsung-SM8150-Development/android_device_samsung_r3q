@@ -1,0 +1,1 @@
+dontaudit hal_camera_default { property_type -default_prop -vendor_default_prop }:file { read open getattr map };
