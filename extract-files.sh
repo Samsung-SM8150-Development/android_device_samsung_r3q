@@ -55,11 +55,8 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libtinyalsa.r3q.so)
-            "${PATCHELF}" --set-soname "libtinyalsa.r3q.so" "${2}"
-            ;;
-        vendor/lib/hw/sound_trigger.primary.msmnile.so)
-            "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa.r3q.so "${2}"
+        vendor/lib/libsample7.so)
+            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
             ;;
     esac
 }

@@ -63,6 +63,7 @@ vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
+vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/librecordalive.so
@@ -470,22 +471,6 @@ vendor/firmware/ipa_uc.mdt
 # Keymaster
 vendor/lib64/libkeymaster_helper.so
 -vendor/lib64/libskeymaster4device.so
-
-## Listen dependency - Moved from /system below
-system/lib/libtinyalsa.so:vendor/lib/libtinyalsa.r3q.so
-
-# Listen
-vendor/lib/hw/sound_trigger.primary.msmnile.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libaudio_soundtrigger.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/libmulawdec.so
-vendor/lib/libsmwrapper.so
 
 # Machine learning
 vendor/lib64/liblearningmodule.so
