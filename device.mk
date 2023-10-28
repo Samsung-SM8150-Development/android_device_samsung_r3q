@@ -28,6 +28,13 @@ PRODUCT_PACKAGES += \
    audio.r_submix.default \
    audio.usb.default
 
+# Audio - SoundFX
+PRODUCT_PACKAGES += \
+   libqcomvisualizer \
+   libqcomvoiceprocessing \
+   libqcompostprocbundle \
+   libvolumelistener
+
 PRODUCT_PACKAGES += \
    libtinyalsa \
    libtinycompress
