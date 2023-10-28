@@ -134,6 +134,7 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
 
 # SePolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/tools/sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 

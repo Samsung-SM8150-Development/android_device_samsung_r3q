@@ -9,6 +9,9 @@ DEVICE_PATH := device/samsung/r3q
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Include tools
+$(call inherit-product, $(DEVICE_PATH)/tools/debug.mk)
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
