@@ -272,6 +272,8 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 vendor/lib64/libminksocket.so
+vendor/lib64/libminkdescriptor.so
+vendor/lib64/libqcbor.so
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -547,6 +549,9 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
+# Mixer Path
+vendor/etc/mixer_paths_tavil.xml
+
 # NFC
 vendor/bin/hw/nxp.android.hardware.nfc@1.1-service
 vendor/etc/init/init.nfc.samsung.rc
@@ -741,7 +746,6 @@ vendor/lib64/libqrtr.so
 # RIL
 vendor/bin/adpl
 vendor/bin/hw/rild
-vendor/bin/ipacm-diag
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
@@ -752,6 +756,8 @@ vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
+vendor/etc/init/init.vendor.rilchip.rc
+vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/locale/plmn_delta_eng.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
 vendor/etc/locale/plmn_delta_zh-rHK.bin
@@ -768,9 +774,9 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
 vendor/lib64/librilutils.so
-vendor/lib64/librmnetctl.so
 vendor/lib64/libsec-ril.so
 vendor/lib64/libsemnativecarrierfeature.so
+vendor/lib64/libxml.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
@@ -800,6 +806,7 @@ vendor/lib64/libvkmanager_vendor.so
 # Sensors
 vendor/bin/factory.ssc
 vendor/bin/sscrpcd
+vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/lsm6dsm_0.json
