@@ -62,8 +62,6 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 
 TARGET_KERNEL_CONFIG := r3q_defconfig
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 ## Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
