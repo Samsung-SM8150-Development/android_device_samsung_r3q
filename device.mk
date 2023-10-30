@@ -314,7 +314,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.samsung.display.rc \
     init.samsung.rc \
-    init.target.rc
+    init.target.rc \
+    ueventd.qcom.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
