@@ -1,12 +1,17 @@
 ## Devices
 /dev/esfp[0-9]					 u:object_r:fingerprint_sensor_device:s0
+/dev/brb					 u:object_r:vendor_radio_device:s0
+/dev/block/sda17				 u:object_r:vendor_persist_block_device:s0
 
 ## Data
-/data/vendor/biometrics				 u:object_r:vendor_biometrics_data_file:s0
-/data/vendor/secradio				 u:object_r:vendor_secradio_data_file:s0
+/data/vendor/biometrics(/.*)?			 u:object_r:vendor_biometrics_data_file:s0
+/data/vendor/secradio(/.*)?			 u:object_r:vendor_secradio_data_file:s0
+/data/vendor/conn(/.*)?				 u:object_r:vendor_conn_data_file:s0
 
 ## Mnt
 /mnt/vendor/efs(/.*)?				 u:object_r:efs_file:s0
+/mnt/vendor/efs/bluetooth(/.*)?			 u:object_r:bluetooth_efs_file:s0
+/efs/biometrics                          u:object_r:biometrics_efs_file:s0
 
 ## Vendor
 /(vendor|system/vendor)/bin/secril_config_svc    u:object_r:secril_config_svc_exec:s0

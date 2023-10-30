@@ -1,0 +1,2 @@
+allow rild vendor_secradio_data_file:file rw_file_perms;
+allow rild vendor_radio_device:chr_file rw_file_perms;

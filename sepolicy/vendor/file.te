@@ -1,11 +1,14 @@
 ## Data
 type vendor_biometrics_data_file, file_type, data_file_type;
 type vendor_secradio_data_file, file_type, data_file_type;
-
+type vendor_conn_data_file, file_type, data_file_type;
+## EFS
+type biometrics_efs_file, file_type, data_file_type;
 ## Sysfs
 type sysfs_input, fs_type, sysfs_type;
 type sysfs_power_supply, fs_type, sysfs_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
+type sysfs_touchscreenpanel, fs_type, sysfs_type;
 type sysfs_sec_hall_ic, fs_type, sysfs_type;
 type sysfs_sec_switch, fs_type, sysfs_type;
 type sysfs_wifi, fs_type, sysfs_type;

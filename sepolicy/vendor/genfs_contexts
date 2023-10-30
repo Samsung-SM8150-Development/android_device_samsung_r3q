@@ -1,11 +1,20 @@
 genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery       u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/soc:battery/power_supply/ac	    u:object_r:sysfs_power_supply:s0
+
 genfscon sysfs /class/fingerprint		 u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/virtual/diag/diag/wakeup4 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/fingerprint	 u:object_r:sysfs_fingerprint:s0
+
+genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup/wakeup2/ u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/diag/diag/wakeup4 u:object_r:sysfs_wakeup:s0
+
+genfscon sysfs /devices/virtual/lcd/panel/	 u:object_r:sysfs_touchscreenpanel:s0
+genfscon sysfs /devices/virtual/sec/tsp/	 u:object_r:sysfs_touchscreenpanel:s0
+
 genfscon sysfs /devices/virtual/input		 u:object_r:sysfs_input:s0
 genfscon sysfs /devices/virtual/sensors/grip_sensor u:object_r:sysfs_input:s0
 genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect		u:object_r:sysfs_sec_hall_ic:s0
 genfscon sysfs /devices/virtual/sec/switch/afc_disable		u:object_r:sysfs_sec_switch:s0
 genfscon sysfs /devices/virtual/sensors/ssc_core		u:object_r:vendor_sysfs_sensors:s0
+
 genfscon sysfs /kernel/boot_wlan/boot_wlan	 u:object_r:sysfs_wifi:s0
 genfscon sysfs /wifi				 u:object_r:sysfs_wifi:s0
