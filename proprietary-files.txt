@@ -918,9 +918,13 @@ vendor/bin/hw/macloader
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 vendor/etc/wifi/indoorchannel.info
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant.conf
 
 # Wifi Firmware
 vendor/firmware/Data.msc
+vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin1
