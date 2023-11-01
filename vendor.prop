@@ -186,3 +186,7 @@ ro.vendor.nfc.support.uicc=true
 ro.camera.notify_nfc=1
 ro.vendor.nfc.info.antpos=2
 ro.vendor.nfc.support.ese=true
+
+# Logspam
+persist.log.tag.sscrpcd=S
+persist.log.tag.VendorTagDescriptor=S
