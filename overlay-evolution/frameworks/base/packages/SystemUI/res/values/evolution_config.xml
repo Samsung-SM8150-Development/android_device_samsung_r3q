@@ -6,4 +6,7 @@
 <resources>
     <!-- Color of the UDFPS pressed view -->
     <color name="config_udfpsColor">#00ff50</color>
+
+    <!-- Whether to find optimal display refresh rate when using udfps -->
+    <bool name="config_udfpsOptimalRefreshRate">false</bool>
 </resources>
