@@ -210,7 +210,8 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    android.hidl.allocator@1.0.vendor
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -290,7 +291,7 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
+    vendor.qti.hardware.perf@2.3 \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Public libraries

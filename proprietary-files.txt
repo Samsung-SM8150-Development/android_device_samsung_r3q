@@ -63,8 +63,8 @@ vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
-vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/librecordalive.so
 vendor/lib/libsamsungVoipResampler.so
@@ -144,9 +144,14 @@ vendor/lib/camera/components/com.qti.node.gpu.so
 vendor/lib/camera/components/com.qti.node.memcpy.so
 vendor/lib/camera/components/com.qti.node.stich.so
 vendor/lib/camera/components/com.qti.node.swregistration.so
+vendor/lib/camera/components/com.qti.stats.aec.so
+vendor/lib/camera/components/com.qti.stats.af.so
 vendor/lib/camera/components/com.qti.stats.afd.so
 vendor/lib/camera/components/com.qti.stats.asd.so
+vendor/lib/camera/components/com.qti.stats.awb.so
+vendor/lib/camera/components/com.qti.stats.haf.so
 vendor/lib/camera/components/com.qti.stats.hafoverride.so
+vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.qtistatic.stats.aec.so
@@ -160,21 +165,32 @@ vendor/lib/camera/components/com.samsung.node.capture_fusion.so
 vendor/lib/camera/components/com.samsung.node.realtimebokeh.so
 vendor/lib/camera/components/com.samsung.node.remosaic.so
 vendor/lib/camera/components/com.samsung.node.smooth_transition.so
+vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so
+vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so
+vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
+vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so
 vendor/lib/camera/components/com.wrapper.stats.aec.so
 vendor/lib/camera/components/com.wrapper.stats.af.so
 vendor/lib/camera/components/com.wrapper.stats.awb.so
 vendor/lib/camera/components/com.wrapper.stats.pdlib.so
+vendor/lib/camera/components/libMOTION.so
 vendor/lib/camera/components/libdepthmapwrapper.so
+vendor/lib/camera/f_dual_calibration.bin
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
+vendor/lib/camera/uw_dual_calibration.bin
+vendor/lib/camera/w_dual_calibration.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.samsung.chi.override.so
 vendor/lib/libcamera_nn_stub.so
+vendor/lib/libcamxfdalgov7.so
 vendor/lib/libcamxfdalgov8.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libchiss3alogdebug.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libdualcam_optical_zoom.so
@@ -182,75 +198,6 @@ vendor/lib/libdualcapture.so
 vendor/lib/libmpbase.so
 vendor/lib/libqcwrappercommon.so
 vendor/lib/libuniplugin.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-vendor/lib64/camera/com.samsung.sensor.gc5035.so
-vendor/lib64/camera/com.samsung.sensor.imx586.so
-vendor/lib64/camera/com.samsung.sensor.s5k4ha.so
-vendor/lib64/camera/com.samsung.sensor.s5kgd1_front.so
-vendor/lib64/camera/com.samsung.sensormodule.0_sony_imx586.bin
-vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1.bin
-vendor/lib64/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin
-vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin
-vendor/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_full.bin
-vendor/lib64/camera/com.samsung.tuned.gc5035.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5k4ha.bin
-vendor/lib64/camera/com.samsung.tuned.s5kgd1_front.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx586.bin
-vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib64/camera/components/com.qti.eisv2.so
-vendor/lib64/camera/components/com.qti.eisv3.so
-vendor/lib64/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qti.node.dummyrtb.so
-vendor/lib64/camera/components/com.qti.node.dummysat.so
-vendor/lib64/camera/components/com.qti.node.eisv2.so
-vendor/lib64/camera/components/com.qti.node.eisv3.so
-vendor/lib64/camera/components/com.qti.node.fcv.so
-vendor/lib64/camera/components/com.qti.node.gpu.so
-vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.qti.node.stich.so
-vendor/lib64/camera/components/com.qti.node.swregistration.so
-vendor/lib64/camera/components/com.qti.stats.afd.so
-vendor/lib64/camera/components/com.qti.stats.asd.so
-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
-vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib64/camera/components/com.qtistatic.stats.aec.so
-vendor/lib64/camera/components/com.qtistatic.stats.af.so
-vendor/lib64/camera/components/com.qtistatic.stats.awb.so
-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib64/camera/components/com.samsung.node.bayercheck.so
-vendor/lib64/camera/components/com.samsung.node.bayerfuse.so
-vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so
-vendor/lib64/camera/components/com.samsung.node.capture_fusion.so
-vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so
-vendor/lib64/camera/components/com.samsung.node.remosaic.so
-vendor/lib64/camera/components/com.samsung.node.smooth_transition.so
-vendor/lib64/camera/components/com.wrapper.stats.aec.so
-vendor/lib64/camera/components/com.wrapper.stats.af.so
-vendor/lib64/camera/components/com.wrapper.stats.awb.so
-vendor/lib64/camera/components/com.wrapper.stats.pdlib.so
-vendor/lib64/camera/components/libdepthmapwrapper.so
-vendor/lib64/camera/fdconfigpreview.bin
-vendor/lib64/camera/fdconfigpreviewlite.bin
-vendor/lib64/camera/fdconfigvideo.bin
-vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.samsung.chi.override.so
-vendor/lib64/libcamera_nn_stub.so
-vendor/lib64/libcamxfdalgov8.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libchiss3alogdebug.so
-vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libdualcam_optical_zoom.so
-vendor/lib64/libdualcapture.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libqcwrappercommon.so
-vendor/lib64/libuniplugin.so
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -271,8 +218,10 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Connection Security
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
-vendor/lib64/libminksocket.so
+vendor/etc/ssg/ta_config.json
+vendor/etc/ssg/tz_whitelist.json
 vendor/lib64/libminkdescriptor.so
+vendor/lib64/libminksocket.so
 vendor/lib64/libqcbor.so
 
 # Charger
@@ -393,6 +342,7 @@ vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
+vendor/bin/chre
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
@@ -612,6 +562,7 @@ system_ext/lib64/vendor.qti.qspmhal@1.0.so
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
+vendor/bin/pm_proxy_helper
 vendor/lib64/libperipheral_client.so
 
 # Protobuf
@@ -725,18 +676,20 @@ vendor/lib64/libqrtr.so
 # RIL
 vendor/bin/adpl
 vendor/bin/hw/rild
+vendor/bin/ks
+vendor/bin/mdm_helper
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/dataadpl.rc
+vendor/etc/init/init.vendor.rilchip.rc
+vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
-vendor/etc/init/init.vendor.rilchip.rc
-vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/locale/plmn_delta_eng.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
 vendor/etc/locale/plmn_delta_zh-rHK.bin
@@ -750,6 +703,7 @@ vendor/etc/plmn_se13.bin
 vendor/etc/sec_config_oem
 vendor/lib/libconfigdb.so
 vendor/lib64/libconfigdb.so
+vendor/lib64/libmdmimgload.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
 vendor/lib64/librilutils.so
@@ -913,12 +867,11 @@ vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 vendor/etc/wifi/indoorchannel.info
 vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Wifi Firmware
 vendor/firmware/Data.msc
-vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin1
@@ -927,3 +880,4 @@ vendor/firmware/wlan/qca_cld/bdwlan.bin2
 vendor/firmware/wlan/qca_cld/bdwlan.bin2_old
 vendor/firmware/wlan/qca_cld/bdwlan.bin_old
 vendor/firmware/wlan/qca_cld/regdb.bin
+vendor/firmware/wlanmdsp.mbn
