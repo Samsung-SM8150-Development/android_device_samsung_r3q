@@ -1,1 +1,2 @@
 set_prop(tee, vendor_qseecomd_prop)
+allow tee efs_file:dir { read open };

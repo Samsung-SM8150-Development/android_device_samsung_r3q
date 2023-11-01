@@ -25,3 +25,8 @@ allow macloader sysfs_net:file r_file_perms;
 # /sys/wifi
 allow macloader sysfs_wifi:dir r_dir_perms;
 allow macloader sysfs_wifi:file rw_file_perms;
+
+# /data/vendor/conn
+allow macloader vendor_conn_data_file:file rw_file_perms;
+allow macloader vendor_conn_data_file:file create_file_perms;
+allow macloader vendor_conn_data_file:dir rw_dir_perms;

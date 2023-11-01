@@ -9,5 +9,6 @@ allow factory_ssc self:netlink_socket { create bind write read };
 # EFS
 allow factory_ssc efs_file:dir search;
 allow factory_ssc efs_file:file rw_file_perms;
+allow factory_ssc sysfs_touchscreenpanel:file r_file_perms;
 
 set_prop(factory_ssc, vendor_sensors_prop)

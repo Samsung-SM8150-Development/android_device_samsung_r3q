@@ -15,3 +15,9 @@ allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
 
 # /dev/qseecom
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+
+# /sys/devices/platform/soc/soc:battery/power_supply/battery/temp
+r_file_recursive(hal_fingerprint_default, sysfs_power_supply)
+
+# /efs/biometrics
+r_file_recursive(hal_fingerprint_default, biometrics_efs_file)
