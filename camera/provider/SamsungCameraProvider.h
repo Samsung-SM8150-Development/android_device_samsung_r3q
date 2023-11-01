@@ -18,8 +18,6 @@
 
 #include "LegacyCameraProviderImpl_2_5.h"
 
-#define SAMSUNG_CAMERA_DEBUG
-
 using ::android::hardware::camera::provider::V2_5::implementation::LegacyCameraProviderImpl_2_5;
 using ::android::hardware::Return;
 
@@ -29,7 +27,7 @@ public:
     ~SamsungCameraProvider() = default;
 
 private:
-    std::vector<int> mExtraIDs;
+    std::vector<int> mExtraIDs = { 50, 52 };
 };
 
 #endif // SAMSUNG_CAMERA_PROVIDER_H
