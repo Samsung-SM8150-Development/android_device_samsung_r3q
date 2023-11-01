@@ -21,6 +21,7 @@ cc_binary {
     ],
     vendor: true,
     relative_install_path: "hw",
+    compile_multilib: "32",
     srcs: [
         "SamsungCameraProvider.cpp",
         "service.cpp"
