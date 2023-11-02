@@ -21,3 +21,6 @@ r_file_recursive(hal_fingerprint_default, sysfs_power_supply)
 
 # /efs/biometrics
 r_file_recursive(hal_fingerprint_default, biometrics_efs_file)
+
+# /sys/devices/virtual/lcd/panel/cell_id
+allow hal_fingerprint_default sysfs_touchscreenpanel:file r_file_perms;
