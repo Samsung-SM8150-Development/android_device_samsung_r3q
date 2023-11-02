@@ -84,11 +84,11 @@ PRODUCT_PACKAGES += \
 #    Bit 22: Telephony
 # MAJOR_CLASS: 0x02 -> 2 (Phone)
 # MINOR_CLASS: 0x0C -> 12 (Smart Phone)
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.device.class_of_device=90,2,12
 
 # Set supported Bluetooth profiles to enabled
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.asha.central.enabled=true \
     bluetooth.profile.a2dp.source.enabled=true \
     bluetooth.profile.avrcp.target.enabled=true \
