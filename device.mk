@@ -297,6 +297,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3 \
     vendor.qti.hardware.perf@2.2.vendor
 
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
