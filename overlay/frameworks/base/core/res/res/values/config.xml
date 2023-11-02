@@ -914,6 +914,3 @@
         <item>600</item>
     </integer-array>
 </resources>
-
-    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-    <bool name="config_dozePulsePickup">true</bool>
