@@ -30,3 +30,5 @@ allow macloader sysfs_wifi:file rw_file_perms;
 allow macloader vendor_conn_data_file:file rw_file_perms;
 allow macloader vendor_conn_data_file:file create_file_perms;
 allow macloader vendor_conn_data_file:dir rw_dir_perms;
+
+set_prop(macloader, vendor_wifi_prop)

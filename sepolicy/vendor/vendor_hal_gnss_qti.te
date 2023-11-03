@@ -1,0 +1,2 @@
+allow vendor_hal_gnss_qti sysfs_power_supply:dir search;
+get_prop(vendor_hal_gnss_qti, vendor_radio_prop)

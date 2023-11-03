@@ -1,6 +1,5 @@
 allow init efs_file:dir mounton;
 
-w_file_recursive(init, proc_sysctl)
 w_file_recursive(init, sysfs_scsi_queue)
 
 allow init proc_last_kmsg:file setattr;

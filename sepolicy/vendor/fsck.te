@@ -1,1 +1,1 @@
-allow fsck vendor_sec_efs_block_device:blk_file rw_file_perms;
+allow fsck vendor_efs_block_device:blk_file rw_file_perms;

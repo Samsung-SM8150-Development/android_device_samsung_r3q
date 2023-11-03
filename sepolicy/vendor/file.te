@@ -14,5 +14,5 @@ type sysfs_sec_hall_ic, fs_type, sysfs_type;
 type sysfs_sec_switch, fs_type, sysfs_type;
 type sysfs_wifi, fs_type, sysfs_type;
 ## Procfs
-type proc_sysctl, fs_type, proc_type;
 type proc_last_kmsg, fs_type, proc_type;
+type proc_rmnet_conf, fs_type, proc_type;

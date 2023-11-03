@@ -1,2 +1,6 @@
 allow kernel sysfs_sec_hall_ic:file { read open };
-allow kernel vendor_param_block_device:blk_file { read open write };
+allow kernel {
+   vendor_param_block_device
+   vendor_debug_block_device
+}:blk_file { read open write };
+allow kernel block_device:dir search;

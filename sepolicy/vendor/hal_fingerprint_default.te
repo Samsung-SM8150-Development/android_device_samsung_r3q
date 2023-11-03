@@ -20,6 +20,7 @@ allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 r_file_recursive(hal_fingerprint_default, sysfs_power_supply)
 
 # /efs/biometrics
+allow hal_fingerprint_default efs_file:dir search;
 r_file_recursive(hal_fingerprint_default, biometrics_efs_file)
 
 # /sys/devices/virtual/lcd/panel/cell_id
