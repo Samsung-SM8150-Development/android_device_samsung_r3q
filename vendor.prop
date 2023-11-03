@@ -18,9 +18,6 @@ persist.vendor.cne.feature=0
 persist.vendor.mdm_helper.fail_action=cold_reset,s3_reset,panic
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.enableadvancedscan=true
-ro.telephony.default_cdma_sub=0
-ro.vendor.sec.radio.def_network=9
-ro.vendor.use_data_netmgrd=false
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 
 # Crypto
