@@ -426,6 +426,18 @@ vendor/firmware/ipa_uc.mdt
 vendor/lib64/libkeymaster_helper.so
 -vendor/lib64/libskeymaster4device.so
 
+# Listen
+vendor/lib/hw/sound_trigger.primary.msmnile.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/libmulawdec.so
+vendor/lib/libsmwrapper.so
+
 # Machine learning
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
