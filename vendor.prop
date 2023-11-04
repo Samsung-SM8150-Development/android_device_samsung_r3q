@@ -116,6 +116,9 @@ wifi.aware.interface=wifi-aware0
 # IncrementalFS
 ro.incremental.enable=1
 
+# Fs-verity
+ro.apk_verity.mode=2
+
 # SoC
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8150
