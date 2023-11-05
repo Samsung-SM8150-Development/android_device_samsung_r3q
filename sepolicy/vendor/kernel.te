@@ -4,3 +4,4 @@ allow kernel {
    vendor_debug_block_device
 }:blk_file { read open write };
 allow kernel block_device:dir search;
+allow kernel self:qipcrtr_socket create_socket_perms_no_ioctl;
