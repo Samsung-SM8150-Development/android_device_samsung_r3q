@@ -360,7 +360,6 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # GNSS
-vendor/bin/chre
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server

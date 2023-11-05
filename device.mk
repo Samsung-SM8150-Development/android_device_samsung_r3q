@@ -124,11 +124,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# ContextHub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-service \
-    android.hardware.contexthub@1.0-impl.generic
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
