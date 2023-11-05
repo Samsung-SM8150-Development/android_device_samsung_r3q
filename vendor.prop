@@ -14,7 +14,6 @@ ro.opengles.version=196610
 dalvik.vm.dex2oat64.enabled=true
 
 # RIL
-persist.vendor.cne.feature=0
 persist.vendor.mdm_helper.fail_action=cold_reset,s3_reset,panic
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.enableadvancedscan=true
@@ -36,7 +35,6 @@ ro.netflix.bsp_rev=Q855-16947-1
 
 # Media
 debug.stagefright.omx_default_rank=0
-vendor.mm.enable.qcom_parser=16777215
 
 # Audio
 aaudio.hw_burst_min_usec=2000

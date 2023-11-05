@@ -92,7 +92,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.asha.central.enabled=true \
     bluetooth.profile.a2dp.source.enabled=true \
     bluetooth.profile.avrcp.target.enabled=true \
-    bluetooth.profile.bap.broadcast.assist.enabled=true \
     bluetooth.profile.bap.unicast.server.enabled=true \
     bluetooth.profile.bas.client.enabled=true \
     bluetooth.profile.csip.set_coordinator.enabled=true \
@@ -107,9 +106,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.pan.nap.enabled=true \
     bluetooth.profile.pan.panu.enabled=true \
     bluetooth.profile.pbap.server.enabled=true \
-    bluetooth.profile.sap.server.enabled=true \
-    bluetooth.profile.tbs.server.enabled=true \
-    bluetooth.profile.vc.server.enabled=true
+    bluetooth.profile.sap.server.enabled=true
 
 # BroadcastRadio
 PRODUCT_PACKAGES += \
