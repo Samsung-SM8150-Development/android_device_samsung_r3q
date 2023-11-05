@@ -431,4 +431,14 @@
         <fqname>@2.0::ISehChannel/epdgd</fqname>
         <fqname>@2.0::ISehChannel/imsd</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.vibrator</name>
+        <transport>hwbinder</transport>
+        <version>2.2</version>
+        <interface>
+            <name>ISehVibrator</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.2::ISehVibrator/default</fqname>
+    </hal>
 </manifest>
