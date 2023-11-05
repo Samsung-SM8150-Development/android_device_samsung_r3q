@@ -63,13 +63,23 @@ vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
+vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libhfp.so
 vendor/lib/librecordalive.so
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio config
@@ -97,6 +107,7 @@ vendor/lib/btaudio_offload_if.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbthost_if.so
@@ -104,6 +115,7 @@ vendor/lib/libsoc_helper.so
 vendor/lib/libsoc_helper_jni.so
 vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 
 # Bluetooth Firmware
 vendor/firmware/apbtfw11.tlv
@@ -207,6 +219,7 @@ vendor/lib/libuniplugin.so
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsprpc.so
+vendor/lib/libsdsprpc.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
@@ -240,6 +253,8 @@ vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC2_AMS670TA01_FHD.xml
 
 # Display HDR
 vendor/lib64/libhdr_tm.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
 
 # Display SDM
 vendor/lib64/libdisplayqos.so
@@ -667,8 +682,8 @@ vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/sec_config
 vendor/etc/sec_config_oem
 vendor/lib/libdiag.so
-vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_encdec.so
 vendor/lib64/libdiag.so
 vendor/lib64/libidl.so
