@@ -10,8 +10,9 @@ ro.hardware.keystore_desede=true
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 
-# Dalvik dex2oat
+# Dalvik VM
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.heapgrowthlimit=512m
 
 # RIL
 persist.vendor.mdm_helper.fail_action=cold_reset,s3_reset,panic
