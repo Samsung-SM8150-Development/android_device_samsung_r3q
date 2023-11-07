@@ -84,10 +84,13 @@ vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio config
 vendor/etc/audio_configs.xml
+vendor/etc/audio_io_policy.conf
 vendor/etc/audio_platform_info.xml
 vendor/etc/audio_platform_info_diff.xml
 vendor/etc/audio_platform_info_qrd.xml
 vendor/etc/mixer_usb_default.xml
+vendor/etc/sound_trigger_platform_info.xml
+vendor/etc/sound_trigger_mixer_paths_wcd9340.xml
 
 # Audio Firmware
 vendor/firmware/dax_param.bin
