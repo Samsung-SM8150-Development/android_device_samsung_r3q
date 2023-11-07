@@ -768,7 +768,6 @@ vendor/lib64/libsecnativefeature.so
 vendor/lib64/libvkmanager_vendor.so
 
 # Sensors
-vendor/bin/factory.ssc
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
