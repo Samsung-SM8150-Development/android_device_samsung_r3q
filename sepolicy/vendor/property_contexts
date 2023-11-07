@@ -15,6 +15,9 @@ ro.vendor.extension_library			 u:object_r:vendor_mpctl_prop:s0
 vendor.sensor.file.permission                    u:object_r:vendor_sensors_prop:s0
 persist.sns.camera_light			 u:object_r:vendor_sensors_prop:s0
 
+# USB
+persist.sys.usb.config				 u:object_r:usb_control_prop:s0
+
 # RIL
 ro.multisim.					 u:object_r:vendor_radio_prop:s0
 ro.vendor.multisim.				 u:object_r:vendor_radio_prop:s0
