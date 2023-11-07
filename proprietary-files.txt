@@ -701,12 +701,9 @@ vendor/lib64/libmdmdetect.so
 vendor/lib64/libmdmimgload.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libqcci_legacy.so
-vendor/lib64/libqdp.so
 vendor/lib64/libqmi_common_so.so
-vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
-vendor/lib64/libqmiextservices.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/librilutils.so
@@ -737,8 +734,10 @@ vendor/lib64/libnetmgr_common.so|005a964f8aebe10a04d3b385d81b711b5dd0dad5
 vendor/lib64/libnlnetmgr.so|653968a3d853bf6c72437ad6fa2441262602b2b1
 vendor/lib64/libqcmaputils.so|2af007174bfb2007a49293f8bf18408ef9a10c86
 vendor/lib64/libqdi.so|a15d75c835caa231fcf905bcf0fecd9db8d93547
+vendor/lib64/libqdp.so|c4019f71b2e598760b938998b456882738c7e51a
 vendor/lib64/libqmi.so|0e43b7840d8d0bb36527318d700bcd0a4700c64c
 vendor/lib64/libqmi_cci.so|fe28dceb33e9a3070b19ea394a26245f4cc9bda3
+vendor/lib64/libqmi_csi.so|28b7dd8906c028af98500bbab2e912d16fab455f
 vendor/lib64/libqmi_client_helper.so|906e317d26ab331745166bc5a42b767c3fa517f8
 vendor/lib64/libqmi_client_qmux.so|c79a6964a0e4684b45c5340a5fce7a96f3442cc1
 vendor/lib64/libqmiservices.so|33b70e96e031e646758e5d887f1c9d6792e990ab
