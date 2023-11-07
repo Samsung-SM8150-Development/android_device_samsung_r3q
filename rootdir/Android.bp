@@ -61,6 +61,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+  name: "init.r3q.rc",
+  src: "etc/init.r3q.rc",
+  sub_dir: "init/hw",
+  vendor: true,
+}
+
+prebuilt_etc {
   name: "init.samsung.display.rc",
   src: "etc/init.samsung.display.rc",
   sub_dir: "init/hw",
