@@ -469,6 +469,14 @@ vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
+# Media C2 - From A908NKSU4DUJ1
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|711fc86b6a7768ba844155b61debdda4e291767e
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
+vendor/etc/seccomp_policy/codec2.vendor.base.policy|05b0779b5da2ea640984d46a46a796edeaab5fab
+vendor/etc/seccomp_policy/codec2.vendor.ext.policy|6a9a9eb3261048f02805261568097410e1a23b2d
+vendor/lib/libqcodec2.so|25be46d8bc16ba2b88310dea1ea6e4ab25cbe1fa
+vendor/etc/media_codecs_c2.xml|7b7525653c6f4cb072c49af087e24a0a3b7f85d6
+
 # Media XMLs
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
