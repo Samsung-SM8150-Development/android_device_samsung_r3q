@@ -178,11 +178,14 @@ vendor.gralloc.disable_ubwc=0
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
-
-# DPM, Sensors
-persist.vendor.dpmhalservice.enable=1
-persist.vendor.sensors.firmware_property_read_support=false
 vendor.pasr.activemode.enabled=true
+
+# DPM
+persist.vendor.dpmhalservice.enable=1
+persist.vendor.dpm.feature=11
+
+# Sensors
+persist.vendor.sensors.firmware_property_read_support=false
 
 # USB
 vendor.usb.diag.func.name=diag
