@@ -20,6 +20,9 @@ persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.enableadvancedscan=true
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 
+# Camera
+camera.disable_zsl_mode=1
+
 # Crypto
 ro.crypto.allow_encrypt_override=true
 ro.crypto.dm_default_key.options_format.version=2
