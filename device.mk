@@ -428,6 +428,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung \
