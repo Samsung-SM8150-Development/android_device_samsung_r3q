@@ -209,6 +209,8 @@
                        sources="primary output,deep_buffer,fast,compressed_offload"/>
                 <route type="mix" sink="Speaker"
                        sources="primary output,deep_buffer,fast,compressed_offload,mmap_no_irq_out"/>
+                <route type="mix" sink="Aux Device Out"
+                       sources="primary output,deep_buffer,fast,direct_pcm,compressed_offload"/>
                 <route type="mix" sink="Wired Headset"
                        sources="primary output,deep_buffer,fast,compressed_offload,mmap_no_irq_out"/>
                 <route type="mix" sink="Wired Headphones"
