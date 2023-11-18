@@ -337,10 +337,10 @@ PRODUCT_PACKAGES += \
     init.r3q.rc \
     init.samsung.display.rc \
     init.samsung.rc \
-    init.target.rc \
-    ueventd.qcom.rc
+    init.target.rc
 
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     $(DEVICE_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
 # Permissions
