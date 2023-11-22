@@ -69,7 +69,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := r3q_defconfig
+TARGET_KERNEL_CONFIG := r3q_defconfig thinlto.config
 TARGET_KERNEL_ARCH := arm64
 
 ## Releasetools
