@@ -89,9 +89,6 @@ on init
     chown system system /sys/class/mdnie/mdnie1/hmt_color_temperature
     chmod 0660 /sys/class/mdnie/mdnie1/hmt_color_temperature
 
-    # Charger
-    chown system system /sys/class/power_supply/battery/batt_slate_mode
-
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
