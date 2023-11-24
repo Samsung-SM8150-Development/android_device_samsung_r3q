@@ -421,7 +421,7 @@ PRODUCT_COPY_FILES += \
 # Samsung-ext
 PRODUCT_PACKAGES += \
     FlashControl \
-    CallVolume
+    SmartCharge
 
 # Skip mount
 PRODUCT_PACKAGES += \
