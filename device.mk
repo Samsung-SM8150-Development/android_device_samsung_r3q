@@ -9,8 +9,8 @@ DEVICE_PATH := device/samsung/r3q
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Include tools
-$(call inherit-product, $(DEVICE_PATH)/tools/debug.mk)
+# Include debug tools
+$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
