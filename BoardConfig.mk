@@ -147,7 +147,9 @@ $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
      $(DEVICE_PATH)/sepolicy/private \
      hardware/samsung-ext/interfaces/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+     $(DEVICE_PATH)/sepolicy/public \
+     hardware/samsung-ext/interfaces/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
