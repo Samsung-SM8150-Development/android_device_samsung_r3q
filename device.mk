@@ -182,8 +182,7 @@ PRODUCT_PACKAGES += \
 
 # Fastcharge
 PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung \
-    vendor.lineage.fastcharge@1.0-service.dummy
+    vendor.lineage.fastcharge@1.0-service.samsung
 
 # FM
 PRODUCT_PACKAGES += \
