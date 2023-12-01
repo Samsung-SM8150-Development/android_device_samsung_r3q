@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Evox configs
 TARGET_ENABLE_BLUR := true
 EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
 
 # Inherit some common Evolution-X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
