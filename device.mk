@@ -438,7 +438,7 @@ PRODUCT_BOOT_JARS += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung \
-    vendor.lineage.touch@1.0-service.samsung_singletap
+    vendor.lineage.touch@1.0-service.ss
 
 # USB
 PRODUCT_PACKAGES += \
