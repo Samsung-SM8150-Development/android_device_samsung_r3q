@@ -4,3 +4,5 @@ w_file_recursive(init, sysfs_scsi_queue)
 
 allow init proc_last_kmsg:file setattr;
 allow init tmpfs:blk_file r_file_perms;
+# dirty_background_bytes, dirty_bytes
+allow init proc:file write;

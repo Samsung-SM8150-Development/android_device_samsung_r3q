@@ -3,3 +3,8 @@ rw_file_recursive(hal_power_default, sysfs_touchscreenpanel)
 
 set_prop(hal_power_default, vendor_powerhal_prop)
 get_prop(hal_power_default, vendor_powerhal_prop)
+
+w_file_recursive(hal_power_default, sysfs_devices_system_cpu)
+w_file_recursive(hal_power_default, vendor_sysfs_devfreq)
+w_file_recursive(hal_power_default, vendor_sysfs_kgsl)
+allow hal_power_default vendor_sysfs_kgsl:lnk_file r_file_perms;
