@@ -305,16 +305,7 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.3 \
-    vendor.qti.hardware.perf@2.2.vendor
-
-# Perf
-PRODUCT_PACKAGES += \
     libqti-perfd-client
-
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
 
 # Public libraries
 PRODUCT_COPY_FILES += \

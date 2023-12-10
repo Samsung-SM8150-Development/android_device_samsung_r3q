@@ -4,5 +4,4 @@ libcdsprpc.so
 libfastcvopt.so
 libhta_hexagon_runtime.so
 libnpu.so
-libqti-perfd-client.so
 libsdsprpc.so
