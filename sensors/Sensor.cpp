@@ -378,10 +378,12 @@ void UdfpsSensor::activate(bool enable, bool notify, bool lock) {
         runLock.unlock();
     }
 
-    if (enable) {
+    if (enable && !kScreenOffFlag) {
         std::thread ([this] {
             bool screenOnByPowerHAL;
 
+            // Block other calls
+            kScreenOffFlag = true;
             // Avoid racing - start 250 ms after
             std::this_thread::sleep_for(250ms);
             // Get if powerhal turned on screen from property
@@ -389,6 +391,8 @@ void UdfpsSensor::activate(bool enable, bool notify, bool lock) {
             // If it didn't, auth failure, turn off tsp
             if (!screenOnByPowerHAL)
                 set(kTsEnabledPath, false);
+            // Unblock
+            kScreenOffFlag = false;
         }).detach();
     }
 }

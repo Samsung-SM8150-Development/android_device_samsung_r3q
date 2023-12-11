@@ -21,6 +21,7 @@
 #include <poll.h>
 #include <unistd.h>
 
+#include <atomic>
 #include <condition_variable>
 #include <memory>
 #include <mutex>
@@ -117,6 +118,7 @@ const std::string kTsEnabledPath = "/sys/class/sec/tsp/input/enabled";
 
 class UdfpsSensor : public SysfsPollingOneShotSensor {
     void activate(bool enable, bool notify, bool lock) override;
+    std::atomic_bool kScreenOffFlag;
 
   public:
     UdfpsSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
