@@ -106,18 +106,18 @@ class SysfsPollingOneShotSensor : public OneShotSensor {
 
   protected:
     virtual void run() override;
-
-  private:
     void interruptPoll();
-
     struct pollfd mPolls[2];
     int mWaitPipeFd[2];
     int mPollFd;
 };
 
 const std::string kTsUdfpsPressedPath = "/sys/class/sec/tsp/fod_pressed";
+const std::string kTsEnabledPath = "/sys/class/sec/tsp/input/enabled";
 
 class UdfpsSensor : public SysfsPollingOneShotSensor {
+    void activate(bool enable, bool notify, bool lock) override;
+
   public:
     UdfpsSensor(int32_t sensorHandle, ISensorsEventCallback* callback)
         : SysfsPollingOneShotSensor(

@@ -335,30 +335,22 @@
       "ResetOnInit": false
     },
     {
-      "Name": "PowerHALMainState",
-      "Path": "vendor.powerhal.state",
+      "Name": "PowerHALScreenState",
+      "Path": "vendor.powerhal.screen_on",
       "Values": [
-        "SUSTAINED_PERFORMANCE",
-        ""
+        "1",
+        "0"
       ],
-      "Type": "Property"
+      "Type": "Property",
+      "ResetOnInit": true
     },
-    {
-      "Name": "PowerHALRenderingState",
-      "Path": "vendor.powerhal.rendering",
-      "Values": [
-        "EXPENSIVE_RENDERING",
-        ""
-      ],
-      "Type": "Property"
-    }
   ],
   "Actions": [
     {
-      "PowerHint": "SUSTAINED_PERFORMANCE",
-      "Node": "PowerHALMainState",
+      "PowerHint": "INTERACTIVE",
+      "Node": "PowerHALScreenState",
       "Duration": 0,
-      "Value": "SUSTAINED_PERFORMANCE"
+      "Value": "1"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -521,12 +513,6 @@
       "Node": "L3BigClusterMinFreq",
       "Duration": 3000,
       "Value": "1440000000"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "PowerHALRenderingState",
-      "Duration": 0,
-      "Value": "EXPENSIVE_RENDERING"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",

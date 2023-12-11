@@ -16,28 +16,21 @@
 
 #include "Sensor.h"
 
+#include <android-base/properties.h>
 #include <hardware/sensors.h>
 #include <log/log.h>
 #include <utils/SystemClock.h>
 
+#include <chrono>
+#include <cmath>
 #include <fstream>
 
-#include <cmath>
-
-#define TSP_ENABLED_PATH "/sys/class/sec/tsp/input/enabled"
+using std::chrono_literals::operator""ms;
 
 template <typename T>
 static void set(const std::string& path, const T& value) {
     std::ofstream file(path);
     file << value;
-}
-
-template <typename T>
-static T get(const std::string& path, const T& def) {
-    std::ifstream file(path);
-    T result;
-    file >> result;
-    return file.fail() ? def : result;
 }
 
 static bool readBool(int fd, bool seek) {
@@ -277,15 +270,8 @@ SysfsPollingOneShotSensor::~SysfsPollingOneShotSensor() {
     interruptPoll();
 }
 
-const std::string kDisabled = std::to_string(0);
-const std::string kEnabled = std::to_string(1);
-
 void SysfsPollingOneShotSensor::activate(bool enable, bool notify, bool lock) {
     std::unique_lock<std::mutex> runLock(mRunMutex, std::defer_lock);
-
-    if (!enable && get<std::string>(TSP_ENABLED_PATH, kDisabled) == kDisabled) {
-        set(TSP_ENABLED_PATH, kEnabled);
-    }
 
     if (lock) {
         runLock.lock();
@@ -302,10 +288,6 @@ void SysfsPollingOneShotSensor::activate(bool enable, bool notify, bool lock) {
 
     if (lock) {
         runLock.unlock();
-    }
-
-    if (enable && get<std::string>(TSP_ENABLED_PATH, kDisabled) == kEnabled) {
-        set(TSP_ENABLED_PATH, kDisabled);
     }
 }
 
@@ -339,9 +321,6 @@ void SysfsPollingOneShotSensor::run() {
             }
 
             if (mPolls[1].revents == mPolls[1].events && readBool(mPollFd, true /* seek */)) {
-                if (get<std::string>(TSP_ENABLED_PATH, kDisabled) == kDisabled) {
-                    set(TSP_ENABLED_PATH, kEnabled);
-                }
                 activate(false, false, false);
                 mCallback->postEvents(readEvents(), isWakeUpSensor());
             } else if (mPolls[0].revents == mPolls[0].events) {
@@ -372,6 +351,46 @@ std::vector<Event> SysfsPollingOneShotSensor::readEvents() {
 void SysfsPollingOneShotSensor::fillEventData(Event& event) {
     event.u.data[0] = 0;
     event.u.data[1] = 0;
+}
+
+void UdfpsSensor::activate(bool enable, bool notify, bool lock) {
+    std::unique_lock<std::mutex> runLock(mRunMutex, std::defer_lock);
+
+    if (!enable) {
+        // We do not care if tsp was already on - powerhal will take care
+        set(kTsEnabledPath, true);
+    }
+
+    if (lock) {
+        runLock.lock();
+    }
+
+    if (mIsEnabled != enable) {
+        mIsEnabled = enable;
+
+        if (notify) {
+            interruptPoll();
+            mWaitCV.notify_all();
+        }
+    }
+
+    if (lock) {
+        runLock.unlock();
+    }
+
+    if (enable) {
+        std::thread ([this] {
+            bool screenOnByPowerHAL;
+
+            // Avoid racing - start 250 ms after
+            std::this_thread::sleep_for(250ms);
+            // Get if powerhal turned on screen from property
+            screenOnByPowerHAL = android::base::GetBoolProperty("vendor.powerhal.screen_on", false);
+            // If it didn't, auth failure, turn off tsp
+            if (!screenOnByPowerHAL)
+                set(kTsEnabledPath, false);
+        }).detach();
+    }
 }
 
 }  // namespace implementation
