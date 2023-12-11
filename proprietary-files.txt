@@ -499,7 +499,6 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e1
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|54487895eb4c26e6ec642538dba910de9b092c81
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|83fb6029772c3a425dbd5cd45a61ca9d427e7604
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|e34b3affaef4e4ee135cbeec8d7c3e8c6cfd65ce
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|a5791aa90552999909e52648d576055a8c533397
 system_ext/lib64/lib-imsvideocodec.so|e1e994cb122ad48b77ae10295a29bcfbe84e4d22
 system_ext/lib64/lib-imsvt.so|38b39cafe351be5abc7b6ae5055ea1f390032502
 system_ext/lib64/lib-imsvtextutils.so|16bed08e80919635fcb7ace934bd5f16f059c182
@@ -559,6 +558,13 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|dee439bc54d7708685fcb69848d3d6471c2
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|516268b5b3e044429f40b5101aa1f42563e9dcd2
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|e63891d94ccc16edb0d276803202e843e62e8832
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
+
+# IMS
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
+system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
 
 # IPA fw
 vendor/etc/init/ipa_fws.rc
@@ -792,19 +798,15 @@ vendor/bin/pd-mapper|a3df24096d45d2c06402bbf989e49dac04bcebdd
 vendor/bin/port-bridge|412f33b02d2e7f8efd4867c6a149feecbef1218b
 vendor/bin/qrtr-ns|09cff0de46c5d4eb1cd7dfa5b5bdda015e9d7a75
 vendor/bin/qti|d25b7cb4b8366715dd1508717bfab8ce25dca3ad
-vendor/bin/rmt_storage|a29b432f85610c23b3f00ee32485611d4b46513d
 vendor/bin/shsusrd|ade38b29d9a829006dc267eed90d6a2d11e46946
 vendor/bin/ssgqmigd|5769f2aef8fdf48f55b01e3d7d3d1aecb860d7e1
 vendor/bin/tftp_server|bf50c0180753908c73fa1f711af87ed35b6947de
-vendor/etc/data/dsi_config.xml|ea5973ae0bffbdfbffb84fc2348b260d53b03b02
-vendor/etc/data/netmgr_config.xml|ebd99ffce6bc051ee811478c4f866907cfb80046
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/netmgrd.rc|1e5663baf6cd0d1d1bffcc685be7d63837be459a
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 vendor/etc/init/qcrild.rc|0fb69d4fdd0c0ebc6b32f16981c54b3c619a21fe
 vendor/etc/init/shsusrd.rc|27b50de2f3d0b7e4ad08921d78b92513fd49d160
-vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
 vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
 vendor/lib64/deviceInfoServiceModule.so|a28de6f099fa3f54b4a20d3e99342c7c064187b2
@@ -861,6 +863,12 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb489
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 vendor/radio/qcril_database/qcril.db|6f6449bde3f6fb6b5ed6b4892272db31ea1261f9
 
+# RIL - from A908NKSU4DUJ1
+vendor/bin/rmt_storage
+vendor/etc/data/dsi_config.xml
+vendor/etc/data/netmgr_config.xml
+vendor/etc/init/vendor.qti.rmt_storage.rc
+
 # MDM
 vendor/bin/ks
 vendor/bin/mdm_helper
@@ -883,7 +891,7 @@ vendor/lib/libfloatingfeature.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 
-# Samsung - A908NKSU4DUJ1
+# Samsung - from A908NKSU4DUJ1
 vendor/lib64/libsemnativecarrierfeature.so|1799c950a7b8e6ae5a6763ff6b1a6cfc9dca9525
 
 # Sensors
