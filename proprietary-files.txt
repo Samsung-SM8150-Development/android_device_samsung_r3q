@@ -1035,10 +1035,3 @@ vendor/firmware/wlan/qca_cld/bdwlan.bin2_old
 vendor/firmware/wlan/qca_cld/bdwlan.bin_old
 vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlanmdsp.mbn
-
-# Vibrator
-vendor/bin/hw/vendor.samsung.hardware.vibrator@2.2-service
-vendor/etc/init/vendor.samsung.hardware.vibrator@2.2-service.rc
-vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so
