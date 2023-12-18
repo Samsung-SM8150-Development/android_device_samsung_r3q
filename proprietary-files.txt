@@ -1026,7 +1026,6 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Wifi Firmware
 vendor/firmware/Data.msc
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini|cdd2e00c5bf0589371697c3dcc1d92b239982301
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin1
 vendor/firmware/wlan/qca_cld/bdwlan.bin1_old
