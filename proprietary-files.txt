@@ -670,6 +670,10 @@ vendor/lib64/libswvdec.so
 # Mixer Path
 vendor/etc/mixer_paths_tavil.xml
 
+# MSM irqbalance - from OnePlus 7 Pro (GM1911_11_H.41)
+vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
+vendor/etc/msm_irqbalance.conf|0141a3e34175f62a3ae1f0f44cca94cf7043f2de
+
 # NFC
 vendor/bin/hw/nxp.android.hardware.nfc@1.1-service
 vendor/etc/init/init.nfc.samsung.rc
