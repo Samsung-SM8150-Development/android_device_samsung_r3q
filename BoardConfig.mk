@@ -144,9 +144,6 @@ TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
-# Vibrator
-$(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
-
 # SePolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
      $(DEVICE_PATH)/sepolicy/private \
