@@ -112,10 +112,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.pbap.server.enabled=true \
     bluetooth.profile.sap.server.enabled=true
 
-# BroadcastRadio
-PRODUCT_PACKAGES += \
-   android.hardware.broadcastradio@1.0-impl
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-service.r3q \
