@@ -114,7 +114,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.6-service.r3q \
+    android.hardware.camera.provider@2.5-service.samsung \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Configstore

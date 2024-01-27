@@ -28,6 +28,14 @@ TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 TARGET_USES_COLOR_METADATA := true
 
+# Camera
+SOONG_CONFIG_NAMESPACES += samsungCameraVars
+SOONG_CONFIG_samsungCameraVars += needs_sec_reserved_field
+SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
+SOONG_CONFIG_samsungCameraVars += extra_ids
+# ID=52 is telephoto
+SOONG_CONFIG_samsungCameraVars_extra_ids := 52
+
 # Media
 TARGET_USES_ION := true
 
