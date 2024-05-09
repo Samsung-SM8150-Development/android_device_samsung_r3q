@@ -108,7 +108,7 @@ on post-fs-data
     
 on boot
  # Permissions for Touchscreen
-    chown system radio /sys/class/sec/tsp/cmd
+    chown system system /sys/class/sec/tsp/cmd
     chown system system /sys/class/sec/tsp/input/enabled
     chmod 0660 /sys/class/sec/tsp/input/enabled
     chown system system /sys/class/sec/tsp/fod_pressed
@@ -237,3 +237,7 @@ on boot
 
 on property:vendor.chre.enabled=0
    stop chre
+
+# initialize powerHAL when boot is completed
+on property:sys.boot_completed=1
+   setprop vendor.powerhal.init 1
