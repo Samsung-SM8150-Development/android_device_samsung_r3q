@@ -14,13 +14,13 @@ TARGET_SUPPORTS_TOUCHGESTURES := true
 TARGET_USES_MINI_GAPPS := true
 
 # Inherit some common Evolution-X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from r3q device
 $(call inherit-product, device/samsung/r3q/device.mk)
 
 PRODUCT_DEVICE := r3q
-PRODUCT_NAME := evolution_r3q
+PRODUCT_NAME := lineage_r3q
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A908N
 PRODUCT_MANUFACTURER := samsung

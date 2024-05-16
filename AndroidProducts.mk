@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/evolution_r3q.mk
+    $(LOCAL_DIR)/lineage_r3q.mk
 
 COMMON_LUNCH_CHOICES += \
-    evolution_r3q-eng \
-    evolution_r3q-userdebug \
-    evolution_r3q-user
+    lineage_r3q-eng \
+    lineage_r3q-userdebug \
+    lineage_r3q-user
