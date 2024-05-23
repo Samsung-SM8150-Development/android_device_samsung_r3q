@@ -137,7 +137,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libsdmcore \
     libsdmutils \
@@ -235,7 +234,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service
 
 # Media C2
@@ -485,7 +483,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    TetheringOverlay \
+    TetheringConfigOverlay \
     CarrierConfigOverlay
 
 # Inherit from r3q vendor tree
