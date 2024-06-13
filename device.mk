@@ -42,7 +42,8 @@ PRODUCT_PACKAGES += \
    libqcomvisualizer \
    libqcomvoiceprocessing \
    libqcompostprocbundle \
-   libvolumelistener
+   libvolumelistener \
+   libprocessgroup.vendor
 
 PRODUCT_PACKAGES += \
    libtinyalsa \
@@ -112,7 +113,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    libcamera_metadata.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -385,7 +387,8 @@ PRODUCT_COPY_FILES += \
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
-    libprotobuf-cpp-full-3.9.1-vendorcompat
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libsqlite.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -393,7 +396,8 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
+    libvndfwk_detect_jni.qti.vendor \
+    libjsoncpp.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
