@@ -184,8 +184,8 @@ on boot
     chown system system /sys/class/sec/sec_epen/hw_param
 
 # Camera
-    chown system system /sys/class/camera/flash/rear_flash
-    chown system system /sys/class/camera/rear/ssrm_camera_info
+    chown camera cameraserver /sys/class/camera/flash/rear_flash
+    chown camera cameraserver /sys/class/camera/rear/ssrm_camera_info
 
 # Permission for nfc, eSE driver
     chmod 0660 /dev/pn547
